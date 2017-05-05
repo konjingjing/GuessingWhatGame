@@ -32,8 +32,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    String reporter="11";
-    String reported="22";
+    String reporter="11"; // get reporter id from page result***************
+    String reported="22"; // get reported id from page result***************
     String reportDetail;
     String type;
 
@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 //type,reportDetail,reporter, reported
                 insert();
                 Toast.makeText(MainActivity.this, "Report has been sent!", Toast.LENGTH_LONG).show();
+                // then get back to main page***************
             }
         });
     }
@@ -92,20 +93,6 @@ public class MainActivity extends AppCompatActivity {
         try{
             String link = "http://10.0.2.2/connectReportDB.php";
 
-//            URL url = new URL(link);
-//            HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
-//            httpURLConnection.setRequestMethod("POST");
-//
-//            httpURLConnection.setDoOutput(true);
-//            httpURLConnection.setDoInput(true);
-//            OutputStream outputStream = httpURLConnection.getOutputStream();
-//            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-//            String post_data = URLEncoder.encode("type","UTF-8")+"="+URLEncoder.encode(type,"UTF-8")+"&"+URLEncoder.encode("detail","UTF-8")+"="+URLEncoder.encode(reportDetail,"UTF-8")+"&"+URLEncoder.encode("reporter","UTF-8")+"="+URLEncoder.encode(reporter,"UTF-8")+"&"+URLEncoder.encode("reported","UTF-8")+"="+URLEncoder.encode(reported,"UTF-8");
-//            bufferedWriter.write(post_data);
-//            bufferedWriter.flush();
-//            bufferedWriter.close();
-//            outputStream.close();
-//            httpURLConnection.disconnect();
             String urlParameters  = "type="+type+"&detail="+reportDetail+"&reporter="+reporter+"&reported="+reported;
             byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
             int    postDataLength = postData.length;
