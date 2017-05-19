@@ -30,12 +30,12 @@
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:text="Type:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@android:color/background_light"
-        app:layout_constraintLeft_toLeftOf="@+id/parent"
-        app:layout_constraintTop_toBottomOf="@+id/report" />
+        app:layout_constraintTop_toBottomOf="@+id/report"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/detail"
@@ -54,11 +54,11 @@
         android:id="@+id/spinner"
         android:layout_width="350dp"
         android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintHorizontal_bias="0.055"
+        android:layout_marginTop="13dp"
         app:layout_constraintLeft_toLeftOf="@+id/type"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/type" />
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/enterDetail"
