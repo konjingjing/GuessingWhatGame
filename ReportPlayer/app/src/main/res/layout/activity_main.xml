@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Base.TextAppearance.AppCompat.Headline"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.user.reportplayer.MainActivity">
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="169dp"
+        android:layout_height="58dp"
+        android:text="Report"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="107dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:text="Type:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@+id/report"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="368dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Detail:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="350dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintLeft_toLeftOf="@+id/type"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/enterDetail"
+        android:layout_width="328dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="13dp"
+        android:background="?android:attr/colorControlHighlight"
+        android:ems="10"
+        android:hint="     Please enter report detail"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="?android:attr/editTextColor"
+        android:textColorHint="?attr/colorButtonNormal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Submit"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintRight_toRightOf="@id/enterDetail"
+        app:layout_constraintTop_toBottomOf="@id/enterDetail"
+        android:layout_marginRight="-12dp" />
+
+</android.support.constraint.ConstraintLayout>
