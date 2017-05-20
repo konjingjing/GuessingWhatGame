@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.watcharit.logintest.MainActivity"
+    android:background="@color/com_facebook_blue">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "30pt"
+        android:text = "GuessingWhat?"
+        android:gravity="center"
+        android:textSize="95px"
+        android:textStyle="bold"
+        android:textColor="@color/com_facebook_button_text_color"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100pt"
+        android:text="Login Start"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_login_bn"
+        android:layout_centerInParent="true">
+    </com.facebook.login.widget.LoginButton>
+
+
+</RelativeLayout>
