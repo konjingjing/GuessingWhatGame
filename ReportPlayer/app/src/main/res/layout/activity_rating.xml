@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.user.reportplayer.RatingActivity">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,24 +16,31 @@
         android:layout_height="0dp"
         android:layout_weight="3"
         android:weightSum="4">
+
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
         <ImageView
+            android:id="@+id/profileImage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/testpic" />
+
         <Button
+            android:id="@+id/btnReport"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="X Report"/>
+            android:background="@android:color/transparent"
+            android:text="X Report"
+            android:textColor="#FF0000"/>
     </LinearLayout>
 
-
     <TextView
+        android:id="@+id/profileName"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -48,43 +56,44 @@
         android:layout_marginRight="50dp"
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/btnRatingI"
+        <Button
+            android:id="@+id/ivRatingI"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_star_rating" />
+            android:background="@drawable/star_rating_selector" />
 
-        <ImageView
-            android:id="@+id/btnRatingII"
+        <Button
+            android:id="@+id/ivRatingII"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_star_rating" />
+            android:background="@drawable/star_rating_selector" />
 
-        <ImageView
-            android:id="@+id/btnRatingIII"
+        <Button
+            android:id="@+id/ivRatingIII"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_star_rating" />
+            android:background="@drawable/star_rating_selector" />
 
-        <ImageView
-            android:id="@+id/btnRatingIV"
+        <Button
+            android:id="@+id/ivRatingIV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_star_rating" />
+            android:background="@drawable/star_rating_selector" />
 
-        <ImageView
-            android:id="@+id/btnRatingV"
+        <Button
+            android:id="@+id/ivRatingV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_star_rating" />
+            android:background="@drawable/star_rating_selector" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSubmit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
