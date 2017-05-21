@@ -32,8 +32,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    String reporter="11"; // get reporter id from page result***************
-    String reported="22"; // get reported id from page result***************
+    String reporter= getIntent().getExtras().getString("userID"); // get reporter id from page result***************
+    String reported= getIntent().getExtras().getString("userPlayer2ID");  // get reported id from page result***************
     String reportDetail;
     String type;
 
