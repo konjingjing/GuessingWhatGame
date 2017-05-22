@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.watcharit.gussing.Main2Activity"
+    android:background="#3B5999">
+
+    <ImageView
+        android:id="@+id/fortunateImage"
+        android:layout_width="239dp"
+        android:layout_height="239dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Answer is"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="answer"
+        android:textColor="#FFFA892D"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        />
+
+    <TextView
+        android:id="@+id/rs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:text="result"
+        android:textStyle = "bold"
+        android:textSize="45dp"
+        android:textColor="#ef4c4d"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
